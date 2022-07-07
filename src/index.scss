@@ -1,0 +1,50 @@
+@import './styles/variables';
+@import './styles/flex';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto",sans-serif;
+  line-height: 1.4;
+  display: block;
+  background: transparent;
+  color: #373a3c;
+  font-family: "Roboto",sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.upload-btn{
+  background-color: rgb(63, 176, 63);
+  width: 100px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  color: white;
+}
+
+
+.no-list-style{
+  list-style-type: none;
+  padding-left: inherit;
+}
+
+h2{
+margin: 1em 0 0.5em;
+font-size: 1.35rem;
+font-weight: bold;
+letter-spacing: .01em;
+color: #373a3c;
+line-height: 1.4;
+}

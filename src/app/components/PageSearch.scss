@@ -1,0 +1,108 @@
+.search-bar-wrapper{
+    display: flex;
+    justify-content: right;
+    margin-right: 2em;
+}
+.search-bar {
+    .search-options {
+        text-align: left;
+        label {
+            margin: 0 0 0.5em 0;
+            text-align: left;
+        }
+    }
+}
+
+/*** Search bar ***/
+// https://app.performline.com/admin/components#search
+.search-bar {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    input {
+        width: 100%;
+        &:active, &:focus {
+            border-color: var(--highlight);
+        }
+        body.no-tab &:focus {
+            outline: 0;
+            box-shadow: 0 0 5px rgba(var(--highlight, 0.5));
+        }
+    }
+    > input {
+        // height: 100%;
+        width: auto;
+        border-top-right-radius: 0; border-bottom-right-radius: 0;
+        border-right: 0;
+    }
+    .button, button {
+        display: inline-block;
+        margin: 3px;
+        padding: 5px 10px;
+        border: 1px solid #00aeef;
+        border-radius: 50px;
+        background-color: #fff;
+        line-height: 1.2em;
+        letter-spacing: .04em;
+        font-size: .9rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #00aeef;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        white-space: nowrap;
+        height: 100%;
+        margin-left: -4px;
+        padding: 7px 9px;
+        border-top-left-radius: 0; border-bottom-left-radius: 0;
+        font-size: 0.9em;
+        background-color: #00aeef;
+        color: #fff;
+        body.no-tab &:focus {
+            outline: 0
+        }
+    }
+    .search-options {
+        z-index: 99;
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        margin-top: 2px;
+        padding: 10px;
+        background: var(--neutral-l);
+        border: 1px solid var(--neutral-m);
+        border-radius: 0 4px 4px 4px;
+        box-shadow: 0 2px 5px rgba(var(--neutral-d, 0.15));
+        font-size: 0.95em;
+        > p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &:focus-within .search-options, &.open .search-options {
+        display: block;
+    }
+}
+
+input{
+    padding: 8px 12px;
+    border: 1px solid #afafaf;
+    line-height: 1;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #373a3c;
+}
+
+.block-label{
+    display: block;
+    margin: 0 0 0.5em 0;
+
+}

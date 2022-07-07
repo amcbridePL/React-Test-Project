@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 2px;
+    background: #ffecbb;
+    font-size: .9em;
+    &.failed{
+        background-color: #f9d1cd;
+    }
+    &.in-progress{
+        background-color: #ffecbb;
+    }
+    .toggle-btn{
+        margin-left: auto;
+    }
+}
+
+.hidden{
+    display: none;
+}
+.active{
+    display: block;
+}
+

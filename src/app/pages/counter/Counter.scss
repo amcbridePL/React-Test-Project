@@ -1,0 +1,46 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    .use-effect-example{
+        background-color: #00aeef;
+        box-shadow: 0 2px 3px rgb(0 0 0 / 25%);
+        border-radius: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        >h1, h2, h3 {
+            width: 100%;
+            text-align: center;
+        }
+        .click-text{
+            line-height:1.4em;
+        }
+        button{
+            color: white;
+            border-radius: 25px;
+            background-color: #00b200 !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.main-nav{
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: 99;
+    background-color: #00aeef;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 25%);
+    color: #fff;
+    overflow: visible;
+}

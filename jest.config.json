@@ -1,0 +1,11 @@
+{
+    "moduleNameMapper": {
+    "^.+\\.(css|less|scss)$": "babel-jest"
+  },
+    "testMatch": [
+        "<rootDir>/src/**/*.test.js",
+        "<rootDir>/src/**/*.test.jsx"
+    ],
+    "testEnvironment": "jsdom"
+
+}

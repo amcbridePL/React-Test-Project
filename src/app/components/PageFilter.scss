@@ -1,0 +1,23 @@
+
+.page-filter{
+    position: relative;
+}
+.filter-options{
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    left: -1px;
+    // top: 100%;
+    min-width: 200px;
+    min-height: 50px;
+    max-height: 300px;
+    padding: 10px;
+    border: 1px solid #00aeef;
+    background: #fff;
+    color: #373a3c;
+    cursor: initial;
+    &.active{
+        display: block;
+    }
+}   
+

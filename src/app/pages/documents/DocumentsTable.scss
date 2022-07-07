@@ -1,0 +1,63 @@
+.documents-table{
+    font-size: .975em;
+
+    .documents-table-header{
+        grid-template-columns: 28% 5% 13% 15% 16% 23%;
+        display: grid;
+        clear: both;
+        background-color: #efefef;
+        border: 1px solid #dbdbdb;
+        font-weight: bold;
+        font-size: .925em;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        span{
+            text-align: left;
+        }
+    }
+    .documents-table-body{
+        .documents-table-row{
+            grid-template-columns: 28% 5% 13% 15% 16% 23%;
+            display: grid;         
+            border-bottom: 1px solid gray;
+            > * {
+                padding: 1em 0 1em 0;
+            }
+            .title{
+                width: 28%;
+            }
+            .type{
+                width: 5%;
+            }
+            .score{
+                width: 13%;
+            }
+            .date-uploaded{
+                width: 15%;
+            }
+            .submitter{
+                width: 16%;
+            }
+            .campaign{
+                width: 23%;
+            }
+        }
+
+    }
+}
+.expand-icon{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+// 28 5 13 15 16 23

@@ -1,0 +1,17 @@
+.clickable-card.red{
+    border-color: rgba(231,76,60,.5);
+    border-left-color: #e74c3c;
+    background-color: rgba(231,76,60,.2);
+    box-shadow: 0 0 2px rgb(231 76 60 / 90%);
+}
+
+.observation-term{
+    margin: 6px 0 6px 8px;
+    padding: 6px 8px;
+    background: rgba(255,255,255,.75);
+    border-radius: 2px;
+    border: 1px solid rgba(0,174,239,.35);
+    .required{
+        border-color:rgba(231,76,60,.5);
+    }
+}

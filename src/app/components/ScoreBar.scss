@@ -1,0 +1,46 @@
+$danger: #e74c3c; 
+$caution: #ffc022;
+
+
+// Score bar, used in documents and cases views
+.score-wrapper {
+    .score-number {
+        display: inline-block;
+        width: 25px;
+        @media (min-width: 1200px) {
+            width: 27px;
+        }
+    }
+    &.score-bad {
+        color: $danger;
+        .score-bar {
+            background-color: $danger;
+        }
+    }
+    &.score-good {
+        color: #78be20;
+        .score-bar {
+            background-color: #78be20;
+        }
+    }
+    &.score-fair {
+        color: $caution;
+        .score-bar {
+            background-color: $caution;
+        }
+    }
+    .score-container {
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+        width: 75px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: #ddd;
+        .score-bar {
+            position: absolute;
+            top: 0; left: 0;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.full-page{
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr 5fr;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        .grid-7{
+            display: flex;
+            align-items: center;
+            .upload-btn{
+                margin-left: 2em;
+            }
+        }
+    }
+    .page-body{
+        padding: 1em;
+        .page-filters{
+            display: flex;
+            margin: 1em 0;
+            padding: 2px 10px;
+            border-radius: 2px;
+            background-color: rgba(0,174,239,.1);
+            > * {
+                margin-right: 1em;
+            }
+            .filter-btns{
+                margin-left: auto;
+                .action-button{
+                    position: relative;
+                    text-decoration: none;
+                    font-weight: 400;
+                    cursor: pointer;
+                    border: none;
+                    margin: 0;
+                    padding: 1px 3px;
+                    color: #00b200 !important;
+                    > svg{
+                        fill: #00b200;
+                    }
+                }
+                .remove-button{
+                    border: none;
+                    margin: 0;
+                    padding: 1px 3px;
+                    color: #e74c3c !important;   
+                    > svg{
+                        fill: #e74c3c;
+                    }             
+                }
+            }
+        }
+    }
+    .documents-table{
+
+    }
+}
